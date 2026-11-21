@@ -1,0 +1,140 @@
+/* ============================================================
+   FreelanceMatch — Employer Dashboard Styles
+   ============================================================ */
+
+/* Reuses dashboard.css components */
+
+/* Pipeline items */
+.pipeline-item {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.pipeline-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Candidate cards in employer view */
+.candidate-card {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  transition: background var(--transition-fast);
+}
+.candidate-card:last-child { border-bottom: none; }
+.candidate-card:hover { background: var(--color-muted); }
+
+.candidate-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.candidate-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-xl);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-lg);
+  flex-shrink: 0;
+}
+
+.candidate-info { flex: 1; min-width: 0; }
+
+.candidate-name {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.candidate-role {
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+  margin-top: var(--space-1);
+}
+
+.candidate-match {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+}
+
+.candidate-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: var(--space-3) 0;
+}
+
+.candidate-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+  margin-bottom: var(--space-3);
+}
+
+.candidate-actions {
+  display: flex;
+  gap: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Job cards in employer view */
+.job-card {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+.job-card:last-child { border-bottom: none; }
+
+.job-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.job-title {
+  font-weight: var(--font-weight-semibold);
+}
+
+.job-meta {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+}
+
+.job-actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .candidate-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .candidate-actions {
+    flex-wrap: wrap;
+  }
+  .candidate-actions .btn {
+    flex: 1 1 100%;
+  }
+}

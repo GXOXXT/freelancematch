@@ -1,0 +1,89 @@
+/* ============================================================
+   FreelanceMatch — Earnings Page Styles
+   ============================================================ */
+
+/* Chart Container */
+.chart-container {
+  position: relative;
+  width: 100%;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Withdraw Form */
+#withdraw-amount {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  text-align: right;
+  padding-right: var(--space-4);
+}
+
+#withdraw-amount::placeholder {
+  color: var(--color-muted-foreground);
+  font-weight: var(--font-weight-normal);
+}
+
+#withdraw-amount:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+/* Transaction Table */
+#transactions-body td {
+  vertical-align: middle;
+}
+
+.transaction-type {
+  text-transform: capitalize;
+}
+
+.transaction-type.earning {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+
+.transaction-type.withdrawal {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.transaction-type.fee {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+.transaction-gross {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+}
+
+.transaction-fee {
+  color: var(--color-warning);
+}
+
+.transaction-net {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-foreground);
+}
+
+.transaction-status {
+  white-space: nowrap;
+}
+
+.transaction-status.badge {
+  font-size: var(--text-xs);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .stat-card {
+    padding: var(--space-4);
+  }
+  .stat-value {
+    font-size: var(--text-2xl);
+  }
+}

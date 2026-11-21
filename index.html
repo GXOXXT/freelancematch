@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreelanceMatch — Submit your CV, get matched with verified job offers. Fast, fair, and transparent freelance hiring.">
+  <title>FreelanceMatch — Get Hired Faster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="/" class="nav-brand" aria-label="FreelanceMatch Home">
+        <span class="nav-brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </span>
+        FreelanceMatch
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="pages/login.html" class="nav-link">Login</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="pages/submit-cv.html" class="btn btn-primary">Get Started Free</a>
+        <button class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile menu">
+      <a href="#features" class="mobile-menu-link">Features</a>
+      <a href="#how-it-works" class="mobile-menu-link">How It Works</a>
+      <a href="#pricing" class="mobile-menu-link">Pricing</a>
+      <a href="pages/login.html" class="mobile-menu-link btn btn-primary" style="text-align:center; margin-top: var(--space-4);">Login</a>
+      <a href="pages/submit-cv.html" class="mobile-menu-link btn btn-accent" style="text-align:center;">Get Started Free</a>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" aria-label="New">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>New: AI-powered matching — offers in 48h</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Submit your CV.<br>Get matched with verified offers.
+          </h1>
+
+          <p class="hero-subtitle">
+            Stop chasing clients. Let our AI match your skills with companies actively hiring freelancers.
+            Transparent pay, escrow protection, zero spam.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="pages/submit-cv.html" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Submit Your CV
+            </a>
+            <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
+          </div>
+
+          <div class="hero-stats" role="list" aria-label="Platform statistics">
+            <div class="stat-item" role="listitem">
+              <div class="stat-value">12,000+</div>
+              <div class="stat-label">Active Freelancers</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-value">3,200+</div>
+              <div class="stat-label">Verified Companies</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-value">48h</div>
+              <div class="stat-label">Avg. Match Time</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-value">94%</div>
+              <div class="stat-label">Offer Acceptance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar" aria-label="Trusted by">
+      <div class="container">
+        <div class="trust-logos" role="list" aria-label="Partner companies">
+          <span class="trust-logo" role="listitem">TechCorp</span>
+          <span class="trust-logo" role="listitem">InnovateLabs</span>
+          <span class="trust-logo" role="listitem">ScaleUp Inc</span>
+          <span class="trust-logo" role="listitem">DataFlow</span>
+          <span class="trust-logo" role="listitem">CloudNine</span>
+          <span class="trust-logo" role="listitem">NextGen AI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16" aria-labelledby="features-title">
+      <div class="container">
+        <header style="text-align:center; margin-bottom: var(--space-12);">
+          <h2 id="features-title" class="text-3xl font-extrabold text-center mb-3">Why Freelancers Choose Us</h2>
+          <p class="text-muted text-lg text-center max-w-2xl mx-auto">Built for how freelancers actually work — fast, fair, and transparent.</p>
+        </header>
+
+        <div class="grid grid-cols-3 gap-6">
+          <article class="feature-card card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="feature-title">One-Click CV Upload</h3>
+            <p class="feature-desc">Drag & drop your CV. Our AI extracts skills, experience, and preferences — no manual forms.</p>
+          </article>
+
+          <article class="feature-card card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="feature-title">AI-Powered Matching</h3>
+            <p class="feature-desc">Our algorithm matches you with relevant offers in 48 hours. No more job board scrolling.</p>
+          </article>
+
+          <article class="feature-card card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">Escrow Protection</h3>
+            <p class="feature-desc">Funds held in escrow until delivery. Get paid on time, every time — guaranteed.</p>
+          </article>
+
+          <article class="feature-card card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="feature-title">Transparent Pricing</h3>
+            <p class="feature-desc">See exact rates upfront. No hidden fees, no bidding wars. You keep 90% of your earnings.</p>
+          </article>
+
+          <article class="feature-card card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-title">Verified Companies Only</h3>
+            <p class="feature-desc">Every employer is vetted. No fake postings, no ghost jobs, no payment disputes.</p>
+          </article>
+
+          <article class="feature-card card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="feature-title">Real-Time Dashboard</h3>
+            <p class="feature-desc">Track matches, offers, payments, and project progress in one beautiful interface.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16" style="background: var(--color-card);" aria-labelledby="how-title">
+      <div class="container">
+        <header style="text-align:center; margin-bottom: var(--space-12);">
+          <h2 id="how-title" class="text-3xl font-extrabold text-center mb-3">How It Works</h2>
+          <p class="text-muted text-lg text-center max-w-2xl mx-auto">Three steps. Zero hassle.</p>
+        </header>
+
+        <div class="step-flow grid grid-cols-3" role="list" aria-label="Steps to get hired">
+          <article class="step-card card" role="listitem">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 class="step-title">Upload Your CV</h3>
+            <p class="step-desc">Drag & drop your resume. AI parses skills, experience, and preferences automatically.</p>
+          </article>
+          <article class="step-card card" role="listitem">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 class="step-title">Get Matched</h3>
+            <p class="step-desc">Our algorithm finds relevant offers from verified companies. You review and choose.</p>
+          </article>
+          <article class="step-card card" role="listitem">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 class="step-title">Start Working</h3>
+            <p class="step-desc">Accept an offer. Funds go to escrow. Get paid on delivery — protected every step.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20" style="background: linear-gradient(135deg, var(--color-primary) 0%, #4F46E5 100%);" aria-labelledby="cta-title">
+      <div class="container text-center">
+        <h2 id="cta-title" class="text-3xl font-extrabold mb-4" style="color: var(--color-on-primary);">Ready to Get Hired?</h2>
+        <p class="mb-8 text-lg" style="color: rgba(255,255,255,0.9); max-width: 40ch; margin-left: auto; margin-right: auto;">Join 12,000+ freelancers getting matched with quality offers. Free to join, no commitment.</p>
+        <a href="pages/submit-cv.html" class="btn btn-lg" style="background: var(--color-accent); color: var(--color-on-accent);" onmouseover="this.style.background='#15803D'" onmouseout="this.style.background='var(--color-accent)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Submit Your CV Free
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-brand" style="margin-bottom: var(--space-4); display: inline-flex;">
+            <span class="nav-brand-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </span>
+            FreelanceMatch
+          </a>
+          <p style="font-size: var(--text-sm); color: var(--color-muted-foreground); line-height: var(--line-height-relaxed);">
+            The fastest way for freelancers to get matched with verified job offers. AI-powered, escrow-protected, transparent.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Product">
+          <h3 class="footer-title">Product</h3>
+          <a href="#features" class="footer-link">Features</a>
+          <a href="#pricing" class="footer-link">Pricing</a>
+          <a href="pages/submit-cv.html" class="footer-link">Submit CV</a>
+          <a href="#" class="footer-link">For Companies</a>
+        </nav>
+        <nav class="footer-links" aria-label="Resources">
+          <h3 class="footer-title">Resources</h3>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#" class="footer-link">Help Center</a>
+          <a href="#" class="footer-link">Community</a>
+          <a href="#" class="footer-link">API Docs</a>
+        </nav>
+        <nav class="footer-links" aria-label="Company">
+          <h3 class="footer-title">Company</h3>
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="#" class="footer-link">Press</a>
+          <a href="#" class="footer-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FreelanceMatch. All rights reserved.</p>
+        <div style="display:flex; gap:var(--space-6);">
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
